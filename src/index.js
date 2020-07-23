@@ -1,6 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 import Router from './router'
+import './static/iconfont/iconfont.css'
 // import * as serviceWorker from './serviceWorker';
 
 // ReactDOM.render(
@@ -15,12 +16,11 @@ import Router from './router'
 // // Learn more about service workers: https://bit.ly/CRA-PWA
 // serviceWorker.unregister();
 
-
 // class Square extends React.Component {
 //   render() {
 //     return (
-//       <button 
-//       className="square" 
+//       <button
+//       className="square"
 //       onClick={()=>this.props.onClick()}
 //       >
 //         {this.props.value}
@@ -29,11 +29,10 @@ import Router from './router'
 //   }
 // }
 
-
 // ========================================
 
 ReactDOM.render(
   // <Game />,
-  <Router/>,
+  <Router />,
   document.getElementById('root')
-);
+)

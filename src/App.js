@@ -1,28 +1,20 @@
-import React from 'react'
-import logo from './logo.svg'
+import React, { useState } from 'react'
 import './App.css'
 import IndexPage from './pages/IndexPage'
+import CartPage from './pages/CartPage'
+import OrderListPage from './pages/OrderListPage'
+import UserPage from './pages/UserPage'
 import BottomNav from './components/BottomNav'
 
 function App() {
+  const [activenum, setActivenum] = useState(0)
   return (
     <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-      <IndexPage />
-      <BottomNav />
+      {activenum == 0 ? <IndexPage /> : ''}
+      {activenum == 1 ? <CartPage /> : ''}
+      {activenum == 2 ? <OrderListPage /> : ''}
+      {activenum == 3 ? <UserPage /> : ''}
+      <BottomNav activenum={activenum} setActivenum={setActivenum} />
     </div>
   )
 }

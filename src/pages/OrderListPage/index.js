@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import styles from './index.module.css'
 
-export default class IndexPage extends Component {
+export default class OrderListPage extends Component {
   render() {
-    return <div>IndexPage</div>
+    return <div>OrderListPage</div>
   }
 }
