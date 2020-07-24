@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import styles from './index.module.scss'
 
-console.log(styles)
-
 const menu = [
   {
     title: '首页',

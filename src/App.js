@@ -8,10 +8,12 @@ import './App.css'
 import Layout from './components/Layout'
 
 function App() {
-  const [activenum, setActivenum] = useState(0)
+  // const [activenum, setActivenum] = useState(0)
   return (
     <div className="App">
-      <Layout />
+      <Layout showTop={false} showBottom={true}>
+        {{ content: '这是传递的content' }}
+      </Layout>
       {/* {activenum == 0 ? <IndexPage /> : ''}
       {activenum == 1 ? <CartPage /> : ''}
       {activenum == 2 ? <OrderListPage /> : ''}
